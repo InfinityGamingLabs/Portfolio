@@ -1,0 +1,31 @@
+﻿<Window x:Class="project4.menuwerknemer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project4"
+        mc:Ignorable="d"
+        Title="menuwerknemer" Height="450" Width="800" Background="LightGreen">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="LightCyan" Offset="0.0"/>
+                    <GradientStop Color="Cyan" Offset="1.0"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock Text="Menu Werknemer" 
+               FontSize="24" 
+               FontWeight="Bold" 
+               Foreground="White" 
+               TextAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Button Content="terug naar menu" Width="150" Height="50" Background="DodgerBlue" Foreground="White" FontWeight="Bold" x:Name="menu" Click="menu_Click"/>
+                <Button Content="pizza's bewerken" Width="150" Height="50" Background="DodgerBlue" Foreground="White" FontWeight="Bold" x:Name="pizza" Click="pizza_Click"/>
+                <Button Content="units bewerken" Width="150" Height="50" Background="DodgerBlue" Foreground="White" FontWeight="Bold" x:Name="product" Click="product_Click"/>
+                <Button Content="mederwerkers bewerken" Width="150" Height="50" Background="DodgerBlue" Foreground="White" FontWeight="Bold" x:Name="mederwerkers" Click="mederwerkers_Click"/>
+                <Button Content="topings bewerken" Width="150" Height="50" Background="DodgerBlue" Foreground="White" FontWeight="Bold" x:Name="topings" Click="topings_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

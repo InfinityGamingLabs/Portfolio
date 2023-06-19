@@ -1,0 +1,80 @@
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.csprojAssemblyReference.cache
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.exe.config
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\MainWindow.g.cs
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\App.g.cs
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart_MarkupCompile.cache
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart_MarkupCompile.lref
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\CrudMarioKart.exe.config
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\CrudMarioKart.exe
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\CrudMarioKart.pdb
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\MySql.Data.dll
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\Google.Protobuf.dll
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\ZstdNet.dll
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\System.Memory.dll
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\System.Buffers.dll
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\bin\Debug\MySql.Data.xml
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\MainWindow.baml
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.g.resources
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.Properties.Resources.resources
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.csproj.GenerateResource.cache
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.csproj.CoreCompileInputs.cache
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.csproj.CopyComplete
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.exe
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.pdb
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\Create.g.cs
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\Edit.g.cs
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\Create.baml
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\Edit.baml
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\Car.g.cs
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\Car.baml
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\Createcar.g.cs
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\Editcar.g.cs
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\Createcar.baml
+C:\Users\danie\Documents\1 summa\leerjaar 1\Programmeren 1\CrudMarioKart\CrudMarioKart\obj\Debug\Editcar.baml
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\CrudMarioKart.exe.config
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\CrudMarioKart.exe
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\CrudMarioKart.pdb
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\Google.Protobuf.dll
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\ZstdNet.dll
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\System.Memory.dll
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\System.Buffers.dll
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\bin\Debug\MySql.Data.xml
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.csproj.AssemblyReference.cache
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.csproj.SuggestedBindingRedirects.cache
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.exe.config
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\Car.g.cs
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\Create.g.cs
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\Createcar.g.cs
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\Edit.g.cs
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\Editcar.g.cs
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\MainWindow.g.cs
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\App.g.cs
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart_MarkupCompile.cache
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart_MarkupCompile.lref
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\Car.baml
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\Create.baml
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\Createcar.baml
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\Edit.baml
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\Editcar.baml
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\MainWindow.baml
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.g.resources
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.Properties.Resources.resources
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.csproj.GenerateResource.cache
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.csproj.CoreCompileInputs.cache
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.csproj.CopyComplete
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.exe
+C:\Users\raulv\OneDrive\school\programeren3\CrudMarioKart\CrudMarioKart\CrudMarioKart\obj\Debug\CrudMarioKart.pdb

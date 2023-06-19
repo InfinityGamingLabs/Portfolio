@@ -1,0 +1,93 @@
+﻿<Window x:Class="project4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project4"
+        mc:Ignorable="d"
+        Title="MainWindow"  MinHeight="450" MinWidth="800"  Background="Bisque">
+    <Grid>
+        <Grid>
+            <Grid.Background>
+                <ImageBrush Opacity="0.7" ImageSource="/images/th.jfif"></ImageBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="mederwerkermenu" Height="25px" Width="175px" Grid.Column="1" Grid.Row="0" VerticalAlignment="Top" Click="mederwerkermenu_Click">terug naar mederwerker menu</Button>
+            <StackPanel Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,35,30" Grid.Column="0">
+                <Button Width="150" Height="25" x:Name="CreateName" Foreground="White" Background="Blue" Click="CreatePizza_Click">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources> Create
+                </Button>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,35,0" Grid.Column="0">
+                <Button x:Name="UpdateName" Foreground="White" Width="150" Height="25" Background="Blue" Click="UpdatePizza_Click">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources> Update
+                </Button>
+            </StackPanel>
+
+            <TextBlock Grid.Row="1" Width="60" Height="30" Foreground="DarkBlue" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,14,0,0" Grid.ColumnSpan="2">Name:</TextBlock>
+            <StackPanel Grid.Column="0" Grid.Row="1" Margin="0,10,20,0"  VerticalAlignment="Top" HorizontalAlignment="Right" Height="35">
+                <TextBox Foreground="Black" x:Name="tbName" PreviewTextInput="tbName_PreviewTextInput_1" FontSize="25" DataContext="{Binding NieuwPizza}" Text="{Binding Name}" Width="185" TextChanged="TextBox_TextChanged"></TextBox>
+            </StackPanel>
+            <TextBlock Grid.Row="1" Width="110" Height="30" Foreground="DarkBlue" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,60,0,0" Grid.ColumnSpan="2">Prijs:</TextBlock>
+            <StackPanel Grid.Column="0" Grid.Row="1" Margin="0,54,20,0"  VerticalAlignment="Top" HorizontalAlignment="Right" Height="35">
+                <TextBox Foreground="Black" x:Name="tbPrijs" PreviewTextInput="tbPrijs_PreviewTextInput_1" FontSize="25"  DataContext="{Binding NieuwPizza}" Text="{Binding Prijs}" Width="185"></TextBox>
+            </StackPanel>
+            <TextBlock Grid.Row="1" Width="160" Height="30" Foreground="DarkBlue" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,70" Grid.ColumnSpan="3">Aantal:</TextBlock>
+            <StackPanel Grid.Column="0" Grid.Row="1" Margin="0,0,20,70"  VerticalAlignment="Bottom" HorizontalAlignment="Right" Height="35">
+                <TextBox Foreground="Black" x:Name="tbAantal" PreviewTextInput="tbAantal_PreviewTextInput_1" FontSize="25"  DataContext="{Binding NieuwPizza}" Text="{Binding Aantal}" Width="185"></TextBox>
+            </StackPanel>
+            <!-- Update -->
+            <TextBlock Width="60" Height="30" Foreground="DarkBlue" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,40,0,0" Grid.ColumnSpan="2">Name:</TextBlock>
+            <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,35,20,0" Height="40">
+                <TextBox Foreground="black" x:Name="tbname" PreviewTextInput="tbname_PreviewTextInput" DataContext="{Binding SelectedPizza}" Text="{Binding Name}" FontSize="25" Width="185"></TextBox>
+            </StackPanel>
+            <TextBlock Width="110" Height="30" Foreground="DarkBlue" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,90,0,0" Grid.ColumnSpan="2">Prijs:</TextBlock>
+            <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,20,0" Height="40">
+                <TextBox Foreground="Black" x:Name="tbprijs" PreviewTextInput="tbprijs_PreviewTextInput" DataContext="{Binding SelectedPizza}" Text="{Binding Prijs}" FontSize="25" Width="185"></TextBox>
+            </StackPanel>
+            <TextBlock Width="160" Height="30" Foreground="DarkBlue" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,38" Grid.ColumnSpan="3">Aantal:</TextBlock>
+            <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,20,30" Height="40">
+                <TextBox Foreground="Black" x:Name="tbaantal" PreviewTextInput="tbaantal_PreviewTextInput" FontSize="25"  DataContext="{Binding SelectedPizza}" Text="{Binding Aantal}" Width="185"></TextBox>
+            </StackPanel>
+            <Grid Margin="5" Grid.Column="1" Grid.RowSpan="2" Height="400">
+                <ListView Background="Black"   Opacity="0.6" Grid.RowSpan="1" Width="320" Height="350" 
+                          ItemsSource="{Binding Pizzas}"  SelectedItem="{Binding SelectedPizza}" Margin="4,9,4,16" x:Name="lvpizza">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <DockPanel>
+                                <TextBlock Text="{Binding Name}"  Foreground="Wheat" Margin="2" Width="200"/>
+                                <TextBlock Text="{Binding Prijs}"  Foreground="Wheat" Margin="2" Width="50px"/>
+                                <TextBlock Text="{Binding Aantal}"  Foreground="Wheat" Margin="2"/>
+                            </DockPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <StackPanel Grid.RowSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,40,0">
+                    <Button Margin="0,0,0,0" x:Name="DeleteName" Foreground="White" Background="Blue" Click="DeletePizza_Click" Height="25" Width="153" Content="Delete" >
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

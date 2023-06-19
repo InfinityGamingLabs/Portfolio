@@ -1,0 +1,32 @@
+﻿<Window x:Class="CrudMarioKart.Editcar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrudMarioKart"
+        mc:Ignorable="d"
+        Title="Editcar" Height="450" Width="800">
+    <StackPanel>
+        <DockPanel>
+            <TextBlock Width="120" Text="ID:"/>
+            <TextBox x:Name="tbCarID"/>
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Width="120" Text="voornaam:"/>
+            <TextBox x:Name="tbKart"/>
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Width="120" Text="achternaam:"/>
+            <TextBox x:Name="tbSpeed"/>
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Width="120" Text="college:"/>
+            <TextBox x:Name="tbacceleration"/>
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Width="120" Text="TeamID:"/>
+            <TextBox x:Name="tbWeight"/>
+        </DockPanel>
+        <Button Content="Wijzig" Click="CarUpdate_Click"/>
+    </StackPanel>
+</Window>

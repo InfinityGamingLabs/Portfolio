@@ -1,0 +1,33 @@
+﻿<Window x:Class="CrudMarioKart.Create"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrudMarioKart"
+        mc:Ignorable="d"
+        Title="Create" Height="450" Width="800">
+    <StackPanel>
+        <DockPanel>
+            <TextBlock Width="120" Text=" ID:"/>
+            <TextBox x:Name="tbPlayerID"/>
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Width="120" Text="name:"/>
+            <TextBox x:Name="tbName"/>
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Width="120" Text="coach:"/>
+            <TextBox x:Name="tbColor"/>
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Width="120" Text="stadion:"/>
+            <TextBox x:Name="tbAttack"/>
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Width="120" Text="opgericht:"/>
+            <TextBox x:Name="tbCarID"/>
+        </DockPanel>
+        <Button Content="Maak aan" Click="Create_Click"/>
+    </StackPanel>
+    
+</Window>

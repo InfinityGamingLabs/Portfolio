@@ -1,0 +1,30 @@
+﻿<Window x:Class="project4.menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project4"
+        mc:Ignorable="d"
+        Title="menu" Height="450" Width="800" Background="Red">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Width="600px">
+            <StackPanel.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="LightCyan" Offset="0.0"/>
+                    <GradientStop Color="Cyan" Offset="1.0"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock Text="Pizza's bestellen" 
+               FontSize="24" 
+               FontWeight="Bold" 
+               Foreground="White" 
+               TextAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Button Content="bestellen" Width="150" Height="50" Background="DodgerBlue" Foreground="White" FontWeight="Bold" x:Name="bestel" Click="bestel_Click"/>
+                <Button Content="medewerkers" Width="150" Height="50" Background="DodgerBlue" Foreground="White" FontWeight="Bold" x:Name="crud" Click="crud_Click"/>
+                <Button Content="Orders" Width="150" Height="50" Background="DodgerBlue" Foreground="White" FontWeight="Bold" x:Name="orders" Click="orders_Click"/>
+                <Button Content="app afsluiten" Width="150" Height="50" Background="DodgerBlue" Foreground="White" FontWeight="Bold" x:Name="afsluiten" Click="afsluiten_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

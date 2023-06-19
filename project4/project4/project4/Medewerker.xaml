@@ -1,0 +1,115 @@
+﻿<Window x:Class="project4.Medewerker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project4"
+        mc:Ignorable="d"
+        Title="Medewerker" Height="555" Width="800"  MaxHeight="555" MaxWidth="800">
+    <Grid>
+        <Grid>
+            <Grid.Background>
+                <ImageBrush Opacity="0.7" ImageSource="images/medewerker.png"></ImageBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock FontWeight="Bold" Foreground="Blue" FontSize="30" Width="184" Height="50" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,5,0,0">Medewerker</TextBlock>
+            <Button x:Name="mederwerkermenu" Height="25px" Width="175px" Grid.Column="1" Grid.Row="0" VerticalAlignment="Top" Click="mederwerkermenu_Click">terug naar mederwerker menu</Button>
+            <!--تحت-->
+            <StackPanel Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,35,30" Grid.Column="0">
+                <Button Foreground="White" Width="150" Height="25" Background="Blue" Click="CreateName_Click" >
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    Create
+                </Button>
+            </StackPanel>
+            <!--فوق-->
+            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,35,10" Grid.Column="0" >
+                <Button x:Name="UpdateName" Width="150" Height="25" Foreground="White" Background="Blue" Click="UpdateName_Click" >
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    Update
+                </Button>
+            </StackPanel>
+            <!--تحت-->
+            <TextBlock Grid.Row="1" Width="60" Height="30" Foreground="DarkBlue" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,14,0,0" Grid.ColumnSpan="2">Name:</TextBlock>
+            <StackPanel Grid.Column="0" Grid.Row="1" Margin="0,10,20,0"  VerticalAlignment="Top" HorizontalAlignment="Right" Height="40" Width="188">
+                <TextBox Grid.Row="1" x:Name="tbName" Foreground="Black" FontSize="25" PreviewTextInput="tbName_PreviewTextInput" DataContext="{Binding NieuwMedewerkers}" Text="{Binding Name}" Width="185"></TextBox>
+            </StackPanel>
+            <TextBlock Grid.Row="1" Width="110" Height="30" Foreground="DarkBlue" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,89,0,0" Grid.ColumnSpan="2">Woonplaats:</TextBlock>
+            <StackPanel Grid.Column="0" Grid.Row="1" Margin="0,84,20,0"  VerticalAlignment="Top" HorizontalAlignment="Right" Height="40" Width="188">
+                <TextBox Grid.Row="1" x:Name="tbWoonplaats" PreviewTextInput="tbWoonplaats_PreviewTextInput" Foreground="Black"  FontSize="25" DataContext="{Binding NieuwMedewerkers}" Text="{Binding Woonplaats}" Width="185"></TextBox>
+            </StackPanel>
+            <TextBlock Grid.Row="1" Width="160" Height="30" Foreground="DarkBlue" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,80" Grid.ColumnSpan="3">Telefoon Nummer:</TextBlock>
+            <StackPanel Grid.Column="0" Grid.Row="1" Margin="0,0,20,75"  VerticalAlignment="Bottom" HorizontalAlignment="Right" Height="40">
+                <TextBox Grid.Row="1" x:Name="tbTelefoonnummer"  Foreground="Black"  PreviewTextInput="tbTelefoonnummer_PreviewTextInput" FontSize="25"  DataContext="{Binding NieuwMedewerkers}" Text="{Binding Telefoonnummer}" Width="185"></TextBox>
+            </StackPanel>
+            <!-- Create -->
+            <TextBlock Width="60" Height="30" Foreground="DarkBlue" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,60,0,0" Grid.ColumnSpan="2">Name:</TextBlock>
+            <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,55,20,0" Height="40">
+                <TextBox Foreground="black" PreviewTextInput="TextBox_PreviewTextInput" Grid.Row="0" DataContext="{Binding SelectedMedwerker}" Text="{Binding Name}" FontSize="25" Width="185"></TextBox>
+            </StackPanel>
+            <TextBlock Width="110" Height="30" Foreground="DarkBlue" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,130,0,0" Grid.ColumnSpan="2">Woonplaats:</TextBlock>
+            <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,125,25,0" Height="40">
+                <TextBox x:Name="tbwoon" Foreground="Black" PreviewTextInput="tbwoon_PreviewTextInput"  DataContext="{Binding SelectedMedwerker}" Text="{Binding Woonplaats}" FontSize="25" Width="180"></TextBox>
+            </StackPanel>
+            <TextBlock Width="160" Height="30" Foreground="DarkBlue" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,45" Grid.ColumnSpan="3">Telefoon Nummer:</TextBlock>
+            <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,25,40" Height="40">
+                <TextBox x:Name="tbtele" PreviewTextInput="tbtele_PreviewTextInput"  Foreground="Black" FontSize="25"  DataContext="{Binding SelectedMedwerker}" Text="{Binding Telefoonnummer}" Width="180"></TextBox>
+            </StackPanel>
+            <!--<Grid Margin="5,5,5,0" Grid.Column="0" Height="574" VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="350px"></RowDefinition>
+                    <RowDefinition Height="350px"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Margin="5" Grid.Column="1">
+                </Grid>
+            </Grid>-->
+            <Line Width="100" Height="10" Grid.Column="2" Margin="20,130,150,130"></Line>
+            <Grid Height="450" Margin="5,5,5,5" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <ListView Background="Black" Opacity="0.6" Width="384" Height="435"
+                          ItemsSource="{Binding Medewerkers}"  SelectedItem="{Binding SelectedMedwerker}" VerticalAlignment="Bottom" Margin="4,9,4,0" x:Name="lvpizza">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <DockPanel>
+                                <TextBlock Text="{Binding Name}"  Foreground="Wheat" Margin="2" Width="200"/>
+                                <TextBlock Text="{Binding Woonplaats}"  Foreground="Wheat" Margin="2" Width="80px"/>
+                                <TextBlock Text="{Binding Telefoonnummer}"  Foreground="Wheat" Margin="2"/>
+
+                            </DockPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <!--تحت-->
+                <StackPanel Grid.RowSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,-30">
+                    <Button x:Name="DeleteName" Foreground="White" Background="Blue" Click="DeleteName_Click"  Height="25" Width="153" Content="Delete">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

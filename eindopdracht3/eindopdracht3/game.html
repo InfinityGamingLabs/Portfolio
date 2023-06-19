@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game Details</title>
+	<style>
+		/* CSS styles here */
+	</style>
+</head>
+<body>
+	<h1>Game Details</h1>
+	<div id="game-details"></div>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>
+		var urlParams = new URLSearchParams(window.location.search);
+		var gameId = urlParams.get('id');
+
+		if (gameId) {
+			axios.get('http://127.0.0.1:8000/api/games/' + gameId)
+				.then(function (response) {
+					if (!response.data) {
+						throw new Error('Invalid response data');
+					}
+
+					var game = response.data;
+
+					var gameDetails = document.getElementById('game-details');
+					gameDetails.innerHTML = '<h2>' + game.title + '</h2>' +
+											'<p>Description: ' + game.description + '</p>' +
+											'<p>Year: ' + game.year + '</p>' +
+											'<p>Platform: ' + game.platform + '</p>' +
+											'<h3>Reviews</h3>';
+
+					var reviews = game.reviews;
+
+					if (Array.isArray(reviews)) {
+						for (var j = 0; j < reviews.length; j++) {
+							var reviewDiv = document.createElement('div');
+							reviewDiv.innerHTML = '<h4>' + reviews[j].id + ': ' + reviews[j].rating + '</h4>' +
+												 '<p>' + reviews[j].comment + '</p>' +
+												 '<p>By: ' + reviews[j].user.name + '</p>';
+							gameDetails.appendChild(reviewDiv);
+						}
+					}
+
+					// Request a new access token
+					axios.get('http://127.0.0.1:8000/api/token')
+						.then(function (response) {
+							var accessToken = response.data.access_token;
+							var tokenType = response.data.token_type;
+
+							// Store the new access token
+							localStorage.setItem('token', accessToken);
+
+							// Print the new access token
+							console.log('New Access Token:', accessToken);
+
+							// Add the access token to subsequent API requests
+							axios.defaults.headers.common['Authorization'] = tokenType + ' ' + accessToken;
+						})
+						.catch(function (error) {
+							console.log('Failed to retrieve new access token:', error);
+						});
+				})
+				.catch(function (error) {
+					console.log(error);
+				});
+		}
+		else {
+			console.log('No game ID specified');
+		}
+	</script>
+</body>
+</html>

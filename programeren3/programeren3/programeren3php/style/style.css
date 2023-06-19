@@ -1,0 +1,20 @@
+html, body{
+    height: 98%;
+  }
+  
+  body{
+    color: black;
+    background-color: #f5f2f0;
+  }
+  
+    
+  header {
+    background-color: #1e8cbe;
+    color: white;
+    width: 100%;
+    text-align: center;
+  }
+  
+   td.border_bottom  {
+    border-bottom: 1px solid black;
+  }
